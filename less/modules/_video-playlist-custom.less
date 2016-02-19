@@ -1,0 +1,72 @@
+@import (less) '../libs/videojs-playlist.css';
+
+.vjs-playlist{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.vjs-playlist ul{
+	margin: 0;
+	border: 1px solid @color_grey-light;
+	max-height: 237px;
+	overflow-y: scroll;
+}
+
+.vjs-playlist ul li{
+	background-color: white;
+	border-bottom: 1px solid @color_grey-light;
+
+	&:last-child{
+		border-bottom: 0;
+	}
+}
+
+.vjs-playlist ul li a{
+	color: @color_black;
+	padding-left: 45px;
+	position: relative;
+	padding-right: 70px;
+
+	&:before{
+		content: '\f04b';
+		font-family: 'FontAwesome';
+		position: absolute;
+		display: block;
+		top: 17px;
+		left: 20px;
+		font-size: 13px;
+	}
+
+	&.currentTrack:before{
+		content: '\f028';
+		color: @color_green;
+		font-size: 15px;
+		top: 15px;
+	}
+
+	.transition(color);
+
+	&.currentTrack{
+		background-color: white;
+		color: @color_green;
+	}
+}
+
+.vjs-playlist ul li:hover{
+	background-color: white;
+
+	a{
+		color: @color_green;
+		text-decoration: none;
+	}
+}
+
+.video-playlist-item-duration{
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+
+.video-playlist-custom.video-js{
+	margin: 0;
+}

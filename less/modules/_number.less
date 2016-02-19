@@ -1,0 +1,35 @@
+.number-box{
+	margin-bottom: 30px;
+	padding-left: 60px;
+	position: relative;
+
+	.numbers > .row > div:last-child &{
+		border: none;
+	}
+}
+
+.number-icon{
+	position: absolute;
+	left: -15px;
+	top: 2px;
+	.fz(55);
+	width: 60px;
+	text-align: center;
+	color: @color_grey;
+}
+
+.number-wrapper{
+	.fz(35);
+	display: block;
+	line-height: 40px;
+	font-weight: @font_light;
+}
+	
+.number-description{	
+	.fz(13);
+	display: block;
+	margin-left: 3px;
+	line-height: 1.4;
+	color: @color_green;
+}
+
