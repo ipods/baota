@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+  color: #333;
+  border: 1px solid #CBD3DD;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 1;
+  padding: 12px 20px;
+  border-radius: 3px;
+  text-align: center;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  background-color: #F6F7F8;
+  outline: none;
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.button .fa {
+  margin-right: 10px;
+}
+.button:active {
+  bottom: -1px;
+}
+.button.large {
+  font-size: 1.125em;
+  padding: 18px 42px;
+  border-radius: 5px;
+}
+.button.large.button-icon {
+  padding: 16px 42px 16px 22px;
+}
+.button.rounded {
+  border-radius: 21px;
+}
+.button.rounded.small {
+  border-radius: 16px;
+}
+.button.rounded.large {
+  border-radius: 27px;
+}
+.button.small {
+  font-size: 0.875em;
+  padding: 8px 16px;
+}
+.button.full {
+  display: block;
+  width: 100%;
+}
+.button.green,
+.button.blue,
+.button.blue-light,
+.button.purple,
+.button.orange,
+.button.red {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.button.green {
+  background-color: #4b5;
+}
+.button.green:hover {
+  background-color: #3da84d;
+}
+.button.blue {
+  background-color: #28C;
+}
+.button.blue:hover {
+  background-color: #1e79b6;
+}
+.button.blue-light {
+  background-color: #48CACC;
+}
+.button.blue-light:hover {
+  background-color: #37c2c4;
+}
+.button.purple {
+  background-color: #8D3DEB;
+}
+.button.purple:hover {
+  background-color: #7f26e9;
+}
+.button.orange {
+  background-color: #FF530D;
+}
+.button.orange:hover {
+  background-color: #f34600;
+}
+.button.red {
+  background-color: #FF3625;
+}
+.button.red:hover {
+  background-color: #ff1e0b;
+}
+.button.stroke {
+  background-color: transparent;
+}
+.button.stroke.green {
+  color: #4b5;
+  border-color: #4b5;
+}
+.button.stroke.blue {
+  color: #28C;
+  border-color: #28C;
+}
+.button.stroke.blue-light {
+  color: #48CACC;
+  border-color: #48CACC;
+}
+.button.stroke.purple {
+  color: #8D3DEB;
+  border-color: #8D3DEB;
+}
+.button.stroke.orange {
+  color: #FF530D;
+  border-color: #FF530D;
+}
+.button.stroke.red {
+  color: #FF3625;
+  border-color: #FF3625;
+}
+.button.stroke.white {
+  color: white;
+  border-color: white;
+}
+.button.stroke.green:hover,
+.button.stroke.blue:hover,
+.button.stroke.blue-light:hover,
+.button.stroke.purple:hover,
+.button.stroke.orange:hover,
+.button.stroke.red:hover {
+  color: white;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button-list .button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.button-list .button:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=_button.css.map */

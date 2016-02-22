@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.skill {
+  margin-bottom: 30px;
+}
+.skill.inline .skill-title,
+.skill.inline .skill-level {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  line-height: 50px;
+  margin: 0;
+}
+.skill.inline .skill-title {
+  margin-right: 15px;
+}
+.skill.inline.small .skill-title {
+  margin-right: 10px;
+}
+.skill.large .skill-title {
+  font-size: 2.1875em;
+}
+.skill.large .skill-level {
+  font-size: 1.25em;
+}
+.skill.small .skill-title {
+  font-size: 1em;
+}
+.skill.small .skill-level {
+  font-size: 0.625em;
+}
+.skill-level {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.skill-level > li {
+  color: #FDC441;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  font-size: 1.25em;
+}
+/*# sourceMappingURL=_skill.css.map */

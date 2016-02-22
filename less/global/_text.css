@@ -1,0 +1,266 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+}
+h1 {
+  font-size: 3em;
+  margin: 0 0 .5em 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 0 0 .5em 0;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 0 0 .5em 0;
+}
+h4 {
+  font-size: 1.17em;
+  margin: 0 0 .5em 0;
+}
+h5 {
+  font-size: 1.12em;
+  margin: 0 0 .5em 0;
+}
+h6 {
+  font-size: .83em;
+  margin: 0 0 .5em 0;
+}
+/* ==========================================================================
+   Paragraph
+   ========================================================================== */
+p {
+  font-size: 1em;
+  margin: 0 0 1em 0;
+  font-weight: 300;
+  line-height: 1.5;
+}
+/* ==========================================================================
+   Block quote
+   ========================================================================== */
+blockquote {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 30px;
+  color: #808488;
+  font-style: italic;
+  border-left: 5px solid #CBD3DD;
+}
+/* ==========================================================================
+   Link
+   ========================================================================== */
+a {
+  color: #28C;
+  text-decoration: none;
+  font-size: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* ==========================================================================
+   Mark inside text
+   ========================================================================== */
+.mark {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.mark.bold {
+  font-weight: 400;
+}
+.mark.bolder {
+  font-weight: 700;
+}
+.mark.italic {
+  font-style: italic;
+}
+.mark.underline {
+  text-decoration: underline;
+}
+.mark.line-through {
+  text-decoration: line-through;
+}
+.mark.sup {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+.mark.sub {
+  vertical-align: sub;
+  font-size: 0.8em;
+}
+.mark.small {
+  font-size: 0.8em;
+}
+.mark.help {
+  border-bottom: 1px dotted #808488;
+  cursor: help;
+}
+.mark.code {
+  font-family: monospace;
+}
+.mark.fill {
+  padding: 2px 5px;
+  border-radius: 4px;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+.mark.fill.blue {
+  background-color: #28C;
+  color: white;
+}
+.mark.fill.blue-light {
+  background-color: #48CACC;
+  color: white;
+}
+.mark.fill.purple {
+  background-color: #8D3DEB;
+  color: white;
+}
+.mark.fill.green {
+  background-color: #4b5;
+  color: white;
+}
+.mark.fill.orange {
+  background-color: #FF530D;
+  color: white;
+}
+.mark.fill.red {
+  background-color: #FF3625;
+  color: white;
+}
+.mark.fill.grey {
+  background-color: #CBD3DD;
+  color: #333;
+}
+/* ==========================================================================
+   Text colors
+   ========================================================================== */
+a.color.blue,
+p.color.blue,
+h1.color.blue,
+h2.color.blue,
+h3.color.blue,
+h4.color.blue,
+h5.color.blue,
+h6.color.blue,
+span.color.blue {
+  color: #28C;
+}
+a.color.blue-light,
+p.color.blue-light,
+h1.color.blue-light,
+h2.color.blue-light,
+h3.color.blue-light,
+h4.color.blue-light,
+h5.color.blue-light,
+h6.color.blue-light,
+span.color.blue-light {
+  color: #48CACC;
+}
+a.color.purple,
+p.color.purple,
+h1.color.purple,
+h2.color.purple,
+h3.color.purple,
+h4.color.purple,
+h5.color.purple,
+h6.color.purple,
+span.color.purple {
+  color: #8D3DEB;
+}
+a.color.green,
+p.color.green,
+h1.color.green,
+h2.color.green,
+h3.color.green,
+h4.color.green,
+h5.color.green,
+h6.color.green,
+span.color.green {
+  color: #4b5;
+}
+a.color.orange,
+p.color.orange,
+h1.color.orange,
+h2.color.orange,
+h3.color.orange,
+h4.color.orange,
+h5.color.orange,
+h6.color.orange,
+span.color.orange {
+  color: #FF530D;
+}
+a.color.red,
+p.color.red,
+h1.color.red,
+h2.color.red,
+h3.color.red,
+h4.color.red,
+h5.color.red,
+h6.color.red,
+span.color.red {
+  color: #FF3625;
+}
+a.color.grey,
+p.color.grey,
+h1.color.grey,
+h2.color.grey,
+h3.color.grey,
+h4.color.grey,
+h5.color.grey,
+h6.color.grey,
+span.color.grey {
+  color: #99a3b1;
+}
+/*# sourceMappingURL=_text.css.map */

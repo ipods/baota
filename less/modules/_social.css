@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.social.small a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.75em;
+}
+.social.large a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.25em;
+}
+.social li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.social li:last-child {
+  margin: 0;
+}
+.social li a {
+  font-size: 1em;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #808488;
+  background-color: #F6F7F8;
+  border: 1px solid #e4e8ed;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.social li a:hover {
+  color: #28C;
+}
+/*# sourceMappingURL=_social.css.map */

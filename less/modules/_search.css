@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.search {
+  position: relative;
+  margin-bottom: 30px;
+}
+.search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #99a3b1;
+  font-size: 13px;
+}
+.search-input {
+  padding-right: 30px;
+  border-radius: 2px;
+}
+.search-minimal {
+  text-align: right;
+  position: relative;
+}
+.search-minimal-icon {
+  font-size: 20px;
+  line-height: 40px;
+  color: #808488;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.search-minimal-input {
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: 42px;
+  width: 180px;
+  height: 30px;
+  background-color: #F6F7F8;
+  border: 1px solid #CBD3DD;
+  border-radius: 3px;
+  max-width: 80%;
+}
+.search-minimal-input:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  right: -4px;
+  top: 11px;
+  border-top: 1px solid #CBD3DD;
+  border-right: 1px solid #CBD3DD;
+  background-color: #F6F7F8;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.search-minimal-input input {
+  border: 0;
+  outline: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 10px;
+  line-height: 16px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=_search.css.map */

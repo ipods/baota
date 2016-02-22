@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 !important;
+}
+body {
+  font-size: 1em;
+  line-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+#content {
+  padding: 60px 0;
+}
+#content.pt0 {
+  padding-top: 0;
+}
+#content.pb0 {
+  padding-bottom: 0;
+}
+.page {
+  min-height: 100%;
+  position: relative;
+}
+.layout {
+  position: relative;
+}
+.layout .col-md-2,
+.layout .col-md-3,
+.layout .col-md-4 {
+  position: static;
+}
+.layout.with-left-sidebar .sidebar {
+  padding-right: 20px;
+}
+.layout.with-right-sidebar .sidebar {
+  padding-left: 20px;
+}
+.sidebar {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+.sidebar.sidebar-is-fixed {
+  position: fixed;
+  top: 30px;
+}
+.sidebar.sidebar-is-bottom {
+  position: absolute;
+  bottom: 0;
+}
+@media (min-width: 1200px) {
+  .container-spaced {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .layout {
+    padding: 0 !important;
+  }
+  .main-content {
+    padding: 0 !important;
+    border: none !important;
+  }
+}
+/*# sourceMappingURL=_layout.css.map */

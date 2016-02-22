@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.tags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.75em;
+}
+.tag-item {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+.tag-item a {
+  display: block;
+  color: #333;
+  margin-right: 20px;
+  margin-bottom: 9px;
+  padding: 2px 12px 2px 11px;
+  border: 1px solid #CBD3DD;
+  border-right: 0;
+  position: relative;
+  border-radius: 3px 0 0 3px;
+}
+.tag-item a:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 19px;
+  top: 3px;
+  right: -9px;
+  background-color: white;
+  border-radius: 0 5px 0 0;
+  border-top: 1px solid #CBD3DD;
+  border-right: 1px solid #CBD3DD;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.tag-item a:after {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  position: absolute;
+  border: 1px solid #CBD3DD;
+  top: 11px;
+  right: -1px;
+}
+/*# sourceMappingURL=_tags.css.map */

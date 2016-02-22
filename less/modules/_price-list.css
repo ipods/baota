@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.price-list {
+  position: relative;
+  padding: 40px 50px;
+  margin: 0 15px 50px 15px;
+  min-height: 100px;
+  box-shadow: 2px 7px 29px 0 rgba(38, 38, 38, 0.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 65%, rgba(0, 0, 0, 0.03) 100%);
+}
+.price-list:hover .feature-is-disabled {
+  opacity: 0.3;
+}
+.price-list-title {
+  text-align: center;
+  color: #808488;
+}
+.price-list-price {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.price-list-price-units {
+  font-size: 20px;
+}
+.price-list-features {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.price-list-feature-item {
+  padding: 5px 0;
+  font-weight: 300;
+}
+.price-list-feature-item.feature-is-disabled {
+  text-decoration: line-through;
+  color: #b3b3b3;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  height: 38px;
+  position: relative;
+}
+.price-list-feature-item.feature-is-disabled:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background-color: #b6bdc7;
+  margin-left: -10px;
+}
+.price-list-button {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  border: 1px solid #28C;
+}
+.price-list-button:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=_price-list.css.map */

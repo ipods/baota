@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.faq {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.faq-item {
+  border-bottom: 1px solid #CBD3DD;
+  margin-bottom: 20px;
+}
+.faq-item:last-child {
+  border-bottom: 0;
+}
+.faq-question {
+  font-size: 1.5em;
+  line-height: 1.4;
+  padding: 20px 30px 20px 0;
+  cursor: pointer;
+  position: relative;
+}
+.faq-question:before {
+  display: block;
+  content: '\f107';
+  position: absolute;
+  right: 0;
+  margin-top: -16px;
+  top: 50%;
+  font-family: Fontawesome;
+}
+.faq-question.active:before {
+  content: '\f106';
+}
+.faq-answer {
+  padding: 0 0 30px 0;
+  display: none;
+}
+.faq-keyword {
+  color: #4b5;
+}
+.faq-filter {
+  border-bottom: 1px solid #CBD3DD;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  position: relative;
+  padding-left: 35px;
+}
+.faq-filter:before {
+  position: absolute;
+  content: "\f002";
+  display: block;
+  font-family: 'FontAwesome';
+  left: 0px;
+  top: 4px;
+  color: #A9A9B1;
+  font-size: 20px;
+  line-height: 65px;
+  padding: 0 1px;
+  background-color: white;
+}
+.faq-filter input {
+  width: 100%;
+  border: none;
+  display: block;
+  line-height: 33px;
+  padding: 20px 0;
+  outline: none;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.faq-filter input::-webkit-input-placeholder {
+  font-weight: 300;
+}
+.faq-filter input:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 300;
+}
+.faq-filter input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 300;
+}
+.faq-filter input:-ms-input-placeholder {
+  font-weight: 300;
+}
+.faq-grid {
+  margin-bottom: 30px;
+}
+.faq-grid-question {
+  margin-bottom: 15px;
+  font-size: 1.25em;
+}
+.faq-grid-answer {
+  color: #808488;
+  line-height: 1.7;
+}
+.faq-grid-show-more {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  color: #28C;
+  border: 1px solid #28C;
+  padding: 0 20px;
+  border-radius: 25px;
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+.faq-grid-show-more i {
+  font-size: 14px;
+  margin-left: 6px;
+  margin-right: -2px;
+}
+.faq-grid-show-more:hover {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .faq-grid {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=_faq.css.map */

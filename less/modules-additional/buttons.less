@@ -1,0 +1,136 @@
+@import '../global/_mixins.less';
+
+/* Buttons */
+/*-----------------------------------*/
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {outline: none;}
+.btn.active, .btn:active {.box-shadow(none);}
+.btn:focus, .btn:active:focus, .btn.active:focus {outline: none;}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	outline: none;
+	vertical-align: top;
+	height: @button-height;
+	line-height: @button-height - @button-border-width * 2;
+	border: @button-border-width solid @button-color;
+	.border-radius(@button-border-radius);
+	background-color: @button-color;
+	font-family: @button-font-family;
+	font-size: @button-font-size;
+	font-weight: @button-font-weight;
+	color: @button-font-color;
+	white-space: nowrap;
+	letter-spacing: 1.2px;
+	padding: 0 @button-height/2;
+	.transition();
+
+	&:hover, &:active {
+		border-color: @button-color-hover;
+		color: @button-font-color;
+		background-color: @button-color-hover;
+		text-decoration: none;
+	}
+	&:active {top: 1px;}
+	&:focus {color: @button-font-color;}
+
+	&.btn-wide {display: block; width: 100%; padding: 0 5px;}
+	&.btn-text-slim {font-weight: 400;}
+
+	&.btn-border-thick {
+		line-height: @button-height - @button-border-width * 4;
+		border-width: @button-border-width * 2;
+	}
+
+	&.btn-transparent {
+		background-color: transparent;
+		color: @button-color;
+
+		&:hover, &:active {
+			border-color: @button-color;
+			background-color: @button-color;
+			color: @button-font-color;
+		}
+	}
+
+	&.btn-icon-left i {margin-right: 10px;}
+	&.btn-icon-right i {margin-left: 10px;}
+
+	&.btn-white {
+		color: @color_blue;
+		border-color: @color-white;
+		background-color: @color-white;
+
+		&:hover, &:active {
+			color: @color-white;
+			border-color: @color-white;
+			background-color: transparent;
+		}
+
+		&.btn-transparent {
+			background-color: transparent;
+			color: @color-white;
+
+			&:hover, &:active {
+				border-color: @button-color;
+				background-color: @button-color;
+				color: @button-font-color;
+			}
+		}
+	}
+
+	&.btn-large {
+		height: @button-lg-height;
+		line-height: @button-lg-height - @button-border-width * 2;
+		font-size: @button-font-size + 4;
+		padding: 0 @button-height/1.8;
+	}
+
+	&.btn-medium {
+		height: @button-md-height;
+		line-height: @button-md-height - @button-border-width * 2;
+	}
+
+	&.btn-small {
+		height: @button-sm-height;
+		line-height: @button-sm-height - @button-border-width * 2;
+	}
+}
+
+/* Social Links */
+/*------------------------------*/
+
+.social-links {
+	margin: 0;
+	list-style: none;
+
+	li {
+		float: left;
+		width: 16.6667%;
+		padding-left: 1px;
+		&:first-child {padding-left: 1px;}
+	}
+
+	a {
+		display: block;
+		height: 70px;
+		line-height: 70px;
+		font-size: 24px;
+		color: @color-white;
+		text-align: center;
+		.transition();
+		&:hover, &:active {opacity: .6;}
+
+		&.link-facebook {background-color: #1952a9;}
+		&.link-twitter {background-color: #26d4f9;}
+		&.link-pinterest {background-color: #fb4343;}
+		&.link-google {background-color: #2d3e50;}
+		&.link-dribbble {background-color: #eb477c;}
+		&.link-tumblr {background-color: #54809d;}
+	}
+}
+
+
+

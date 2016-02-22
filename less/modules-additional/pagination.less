@@ -1,0 +1,38 @@
+@import '../global/_mixins.less';
+
+/* Pager */
+/*------------------------------*/
+
+.pager {
+	text-align: center;
+	font-size: 0;
+	list-style: none;
+	margin-bottom: 70px;
+
+	li {
+		display: inline-block;
+		& + li {margin-left: -1px;}
+
+		&:first-child a {border-radius: 2px 0 0 2px;}
+		&:last-child a {border-radius: 0 2px 2px 0;}
+	}
+
+	a, span {
+		display: block;
+		height: 60px;
+		line-height: 58px;
+		font-size: @font-size - 1;
+		font-weight: 300;
+		color: @color_black;
+		padding: 0 4em;
+		border: 1px solid difference(@color-white, #251f18);
+		background-color: difference(@color-white, #030303);
+
+		&:hover, &:active {text-decoration: none;}
+	}
+}
+
+
+
+
+

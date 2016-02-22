@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+/* Buttons */
+/*-----------------------------------*/
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  outline: none;
+}
+.btn.active,
+.btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+  vertical-align: top;
+  height: 54px;
+  line-height: 52px;
+  border: 1px solid #28C;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #28C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 1.2px;
+  padding: 0 27px;
+  -webkit-transition: all 0.25s ease, all 0.25s ease;
+  -moz-transition: all 0.25s ease, all 0.25s ease;
+  -ms-transition: all 0.25s ease, all 0.25s ease;
+  -o-transition: all 0.25s ease, all 0.25s ease;
+  transition: all 0.25s ease, all 0.25s ease;
+}
+.btn:hover,
+.btn:active {
+  border-color: #3399dd;
+  color: #fff;
+  background-color: #3399dd;
+  text-decoration: none;
+}
+.btn:active {
+  top: 1px;
+}
+.btn:focus {
+  color: #fff;
+}
+.btn.btn-wide {
+  display: block;
+  width: 100%;
+  padding: 0 5px;
+}
+.btn.btn-text-slim {
+  font-weight: 400;
+}
+.btn.btn-border-thick {
+  line-height: 50px;
+  border-width: 2px;
+}
+.btn.btn-transparent {
+  background-color: transparent;
+  color: #28C;
+}
+.btn.btn-transparent:hover,
+.btn.btn-transparent:active {
+  border-color: #28C;
+  background-color: #28C;
+  color: #fff;
+}
+.btn.btn-icon-left i {
+  margin-right: 10px;
+}
+.btn.btn-icon-right i {
+  margin-left: 10px;
+}
+.btn.btn-white {
+  color: #28C;
+  border-color: #fff;
+  background-color: #fff;
+}
+.btn.btn-white:hover,
+.btn.btn-white:active {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
+.btn.btn-white.btn-transparent {
+  background-color: transparent;
+  color: #fff;
+}
+.btn.btn-white.btn-transparent:hover,
+.btn.btn-white.btn-transparent:active {
+  border-color: #28C;
+  background-color: #28C;
+  color: #fff;
+}
+.btn.btn-large {
+  height: 60px;
+  line-height: 58px;
+  font-size: 21px;
+  padding: 0 30px;
+}
+.btn.btn-medium {
+  height: 44px;
+  line-height: 42px;
+}
+.btn.btn-small {
+  height: 36px;
+  line-height: 34px;
+}
+/* Social Links */
+/*------------------------------*/
+.social-links {
+  margin: 0;
+  list-style: none;
+}
+.social-links li {
+  float: left;
+  width: 16.6667%;
+  padding-left: 1px;
+}
+.social-links li:first-child {
+  padding-left: 1px;
+}
+.social-links a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.25s ease, all 0.25s ease;
+  -moz-transition: all 0.25s ease, all 0.25s ease;
+  -ms-transition: all 0.25s ease, all 0.25s ease;
+  -o-transition: all 0.25s ease, all 0.25s ease;
+  transition: all 0.25s ease, all 0.25s ease;
+}
+.social-links a:hover,
+.social-links a:active {
+  opacity: .6;
+}
+.social-links a.link-facebook {
+  background-color: #1952a9;
+}
+.social-links a.link-twitter {
+  background-color: #26d4f9;
+}
+.social-links a.link-pinterest {
+  background-color: #fb4343;
+}
+.social-links a.link-google {
+  background-color: #2d3e50;
+}
+.social-links a.link-dribbble {
+  background-color: #eb477c;
+}
+.social-links a.link-tumblr {
+  background-color: #54809d;
+}
+/*# sourceMappingURL=buttons.css.map */

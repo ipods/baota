@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.promo-title-wrapper {
+  margin-bottom: 70px;
+  padding-top: 140px;
+}
+.promo-title-less-space {
+  padding-top: 100px;
+}
+.promo-title-no-icon {
+  padding-top: 80px;
+}
+.promo-title-no-icon .promo-title:before {
+  display: none;
+}
+.promo-title {
+  text-align: center;
+  font-size: 3.25em;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  position: relative;
+}
+.promo-title:before {
+  position: absolute;
+  content: attr(data-icon);
+  display: block;
+  font-family: 'Pe-icon-7-stroke';
+  font-size: 29px;
+  opacity: 0.3;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  top: -60px;
+  left: 50%;
+  margin-left: -20px;
+  speak: none;
+}
+.promo-title span {
+  color: #4b5;
+}
+.promo-description {
+  text-align: center;
+  font-size: 1.25em;
+  color: #808488;
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .promo-title {
+    font-size: 2.375em;
+  }
+  .promo-description {
+    font-size: 1.0625em;
+  }
+}
+/*# sourceMappingURL=_promo-title.css.map */

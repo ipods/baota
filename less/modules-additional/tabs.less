@@ -1,0 +1,69 @@
+@import '../global/_mixins.less';
+
+/* Tabs */
+/*------------------------------*/
+
+.tabs {
+	border: 1px solid difference(@color-white, #251f18);
+	background-color: difference(@color-white, #030303);
+}
+
+.nav-tabs {
+	width: 40%;
+	float: left;
+	list-style: none;
+	margin: 0;
+
+	li {
+		margin-bottom: 1px;
+		&:last-child {margin-bottom: 0;}
+
+		a {
+			display: table;
+			.size(100%, 170px);
+			background-color: @color_blue;
+			color: @color-white;
+			padding-left: 35px;
+			padding-right: 15px;
+			font-size: @font-size + 4;
+			font-weight: 300;
+			text-decoration: none;
+			.transition();
+
+			&:hover, &:active {
+				text-decoration: none;
+				color: @color_black;
+				background-color: difference(@color-white, #130f0e);
+			}
+
+			span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			i {
+				font-size: 30px;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+		}
+
+		&.active > a {
+			text-decoration: none;
+			color: @color_black;
+			background-color: difference(@color-white, #130f0e);
+		}
+	}
+}
+
+.tab-content {
+	width: 60%;
+	float: right;
+	padding: 50px 25px 20px;
+
+	> .tab-pane {display: none;}
+	> .active {display: block;}
+}
+
+
+

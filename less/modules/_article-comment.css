@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.comments {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.comment-list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.comment-list-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #CBD3DD;
+  position: relative;
+}
+.comment-list-item:last-child {
+  margin-bottom: 0;
+}
+.comment-reply {
+  margin-top: 20px;
+  position: relative;
+}
+.comment-reply:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 2;
+  top: -5px;
+  left: 49%;
+  background-color: #F6F7F8;
+  border-left: 1px solid #CBD3DD;
+  border-top: 1px solid #CBD3DD;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.comment-reply .comment-list {
+  margin: 0;
+}
+.comment-reply .comment-list-item {
+  border-radius: 0;
+  background-color: #F6F7F8;
+  border-left: 1px solid #CBD3DD;
+  border-top: 1px solid #CBD3DD;
+  border-right: 1px solid #CBD3DD;
+  border-bottom: 0;
+  margin: 0;
+}
+.comment-reply .comment-list-item:last-child {
+  border-bottom: 1px solid #CBD3DD;
+}
+.comment-content {
+  padding-left: 80px;
+  position: relative;
+}
+.comment-user-photo {
+  width: 60px;
+  position: absolute;
+  line-height: 0;
+  left: 0;
+  top: 0;
+}
+.comment-user-photo img {
+  max-width: 100%;
+}
+.comment-header {
+  margin-bottom: 5px;
+}
+.comment-header:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.comment-username {
+  float: left;
+}
+.comment-meta {
+  font-size: 0.875em;
+  float: right;
+  color: #99a3b1;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.comment-meta li {
+  display: inline;
+  position: relative;
+  padding: 0 7px;
+}
+.comment-meta li:after {
+  position: absolute;
+  right: -2px;
+  display: block;
+  content: '';
+  top: 3px;
+  width: 1px;
+  height: 15px;
+  background-color: #CBD3DD;
+}
+.comment-meta li:first-child {
+  padding-left: 0;
+}
+.comment-meta li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+.comment-meta li:last-child:after {
+  display: none;
+}
+.comment-message {
+  font-size: 0.9375em;
+}
+.comment-actions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.comment-action-item {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+}
+.comment-action-item:last-child {
+  margin: 0;
+}
+.comment-action-like {
+  color: #FF3625;
+}
+.comment-action-like:hover .fa:before,
+.comment-action-like.comment-action-liked .fa:before {
+  content: '\f004';
+}
+.comment-action-reply {
+  color: #99a3b1;
+}
+.comment-form {
+  padding-top: 10px;
+}
+.comment-form-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.comment-form-list-item {
+  margin-bottom: 20px;
+}
+.comment-form-list-item input[type="text"] {
+  height: 45px;
+}
+.comment-form-list-item textarea {
+  height: 110px;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 175px;
+  width: 100%;
+}
+.comment-form-list-item button {
+  display: block;
+  height: 45px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #CBD3DD;
+  font-size: 14px;
+  outline: none;
+  padding: 0;
+  line-height: 35px;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+}
+.comment-form-list-item button:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-family: 'Pe-icon-7-stroke';
+  font-size: 20px;
+  line-height: 45px;
+  content: '\e668';
+  border-right: 1px solid #CBD3DD;
+  border-radius: 3px;
+}
+.comment-form-list-item button:hover:before {
+  content: '+';
+  font-family: 'Roboto', sans-serif;
+  line-height: 42px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #808488;
+}
+@media (max-width: 480px) {
+  .comment-username,
+  .comment-meta {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .comment-content {
+    padding-left: 0;
+    padding-top: 100px;
+  }
+  .comment-user-photo {
+    left: 50%;
+    width: 80px;
+    margin-left: -40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .comment-actions {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=_article-comment.css.map */

@@ -1,0 +1,561 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+/*
+    Mobile Menu Core Style
+*/
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer;
+}
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left;
+}
+.slicknav_menu .slicknav_icon {
+  float: left;
+  margin: 0.188em 0 0 0.438em;
+}
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.188em;
+}
+.slicknav_nav {
+  clear: both;
+}
+.slicknav_nav ul,
+.slicknav_nav li {
+  display: block;
+}
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em;
+}
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
+.slicknav_nav .slicknav_row {
+  display: block;
+}
+.slicknav_nav a {
+  display: block;
+}
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+  display: inline;
+}
+.slicknav_menu:before,
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+}
+.slicknav_menu:after {
+  clear: both;
+}
+/* IE6/7 support */
+.slicknav_menu {
+  *zoom: 1;
+}
+/* 
+    User Default Style
+    Change the following styles to modify the appearance of the menu.
+*/
+.slicknav_menu {
+  font-size: 16px;
+}
+/* Button */
+.slicknav_btn {
+  margin: 5px 5px 6px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #222222;
+}
+/* Button Text */
+.slicknav_menu .slicknav_menutxt {
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000;
+}
+/* Button Lines */
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #f5f5f5;
+}
+.slicknav_menu {
+  background: #4c4c4c;
+  padding: 5px;
+}
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+}
+.slicknav_nav,
+.slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+.slicknav_nav ul {
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+.slicknav_nav .slicknav_row {
+  padding: 5px 10px;
+  margin: 2px 5px;
+}
+.slicknav_nav a {
+  padding: 5px 10px;
+  margin: 2px 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0;
+}
+.slicknav_nav .slicknav_row:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #fff;
+}
+.slicknav_nav a:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #222;
+}
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+.menu {
+  line-height: 40px;
+  margin: 0;
+  font-size: 15px;
+  padding: 0;
+  list-style-type: none;
+  color: #333;
+  font-weight: 300;
+}
+.menu .sf-with-ul {
+  padding-right: 25px;
+}
+.menu .sf-with-ul:after {
+  position: absolute;
+  content: '\f0d7';
+  display: block;
+  top: 12px;
+  right: 10px;
+  font-size: 12px;
+  color: #99a3b1;
+  font-family: 'FontAwesome';
+}
+.menu ul {
+  font-size: 14px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1) !important;
+  position: absolute;
+  text-align: left;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  margin: 0;
+  list-style-type: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e4e8ed;
+}
+.menu ul .sf-with-ul {
+  padding-right: 25px;
+  text-indent: 15px;
+}
+.menu ul .sf-with-ul:after {
+  content: '+';
+  top: 15px;
+  right: 15px;
+  color: #808488;
+  border-radius: 0px;
+  width: 18px;
+  text-indent: 0;
+  height: 18px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.menu ul .sf-with-ul:before {
+  display: none;
+}
+.menu ul .sf-with-ul:hover:after {
+  color: #4b5;
+  border-color: #eaedf1;
+  content: '\f105';
+  font-family: 'FontAwesome';
+}
+.header-over .menu ul {
+  box-shadow: none;
+  border: 0;
+}
+.menu ul ul {
+  top: 0;
+  left: 100%;
+  margin-left: 1px;
+}
+.menu li {
+  position: relative;
+  white-space: nowrap;
+  *white-space: normal;
+  text-align: center;
+}
+.menu li:hover > ul,
+.menu li.sfHover > ul {
+  display: block;
+  -webkit-transition: none;
+  transition: none;
+}
+.menu a {
+  display: block;
+  line-height: 1;
+  position: relative;
+  padding: 10px 15px;
+  color: inherit;
+  text-decoration: none;
+}
+.menu > li {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.menu > li > ul {
+  top: 57px;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.header-over .menu > li > ul {
+  top: 47px;
+}
+.menu > li > ul:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: white;
+  top: -2px;
+  left: 50%;
+  margin-left: -4px;
+  border-radius: 1px;
+}
+.menu > li > ul li {
+  background-color: white;
+  border-bottom: 1px solid #e4e8ed;
+}
+.menu > li > ul li:first-child {
+  border-radius: 3px 3px 0 0;
+}
+.menu > li > ul li:last-child {
+  border-radius: 0 0 3px 3px;
+}
+.menu > li > ul li a {
+  position: relative;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  padding: 15px 25px;
+}
+.menu > li > ul li a:hover {
+  color: #4b5;
+}
+.menu > li > ul li a:hover:before {
+  opacity: 1;
+}
+.menu > li > ul li a:hover:not(.sf-with-ul):after {
+  width: 60%;
+}
+.menu > li > ul li a.sf-with-ul {
+  padding-right: 40px;
+}
+.menu > li > ul li a:not(.sf-with-ul):after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  left: 50%;
+  bottom: -1px;
+  background-color: #69c977;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -ms-transition: width 0.25s ease;
+  -o-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+.menu.upper {
+  text-transform: uppercase;
+}
+.menu-label {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 9px;
+  padding: 0px 8px;
+  height: 18px;
+  border-radius: 2px;
+  color: white;
+  background-color: #4b5;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.menu-label:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #4b5;
+  z-index: -1;
+  width: 3px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: -2px;
+  left: 50%;
+  margin-left: -2px;
+}
+.menu-light > li > a {
+  color: white;
+}
+.sidr ul li a,
+.sidr ul li span {
+  position: relative;
+}
+.sidr .sidr-class-menu-label {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  position: absolute;
+  border-radius: 3px;
+  right: 10px;
+  font-size: 12px;
+  padding: 0 12px;
+  background-color: #4b5;
+  line-height: 22px;
+  top: 0;
+  color: white;
+  top: 50%;
+  margin-top: -11px;
+}
+.slicknav_menu {
+  background-color: transparent;
+  padding: 0;
+  display: none;
+}
+.slicknav_btn {
+  float: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+.slicknav_menu .slicknav_menutxt,
+.slicknav_menu .slicknav_icon {
+  float: none;
+}
+.slicknav_menu .slicknav_icon-bar {
+  box-shadow: none;
+  background-color: #808488;
+  height: 3px;
+  width: 28px;
+  margin-bottom: 6px;
+  float: none;
+}
+.slicknav_menu .slicknav_icon-bar:last-child {
+  margin: 0;
+}
+.slicknav_menu.menu-light .slicknav_icon-bar {
+  background-color: white;
+}
+.slicknav_nav {
+  color: #333;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  overflow: visible;
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 99;
+  width: 280px;
+  right: 14px;
+  font-weight: 300;
+}
+.slicknav_nav:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 20px;
+  top: -5px;
+  border-radius: 2px;
+}
+.slicknav_nav ul {
+  margin: 0;
+  padding: 0 15px;
+}
+.slicknav_nav .slicknav_row {
+  position: relative;
+}
+.slicknav_nav a,
+.slicknav_nav .slicknav_row {
+  color: inherit;
+  outline: none;
+  margin: 0;
+  font-size: 16px;
+  display: block;
+  border-radius: 3px;
+  text-align: left;
+  padding: 7px 15px;
+}
+.slicknav_nav a .menu-label,
+.slicknav_nav .slicknav_row .menu-label {
+  top: 10px;
+  right: -8px;
+  left: auto;
+  line-height: 17px;
+  height: auto;
+  bottom: auto;
+  border-radius: 3px;
+  font-size: 11px;
+  padding: 2px 13px;
+}
+.slicknav_nav a .menu-label:after,
+.slicknav_nav .slicknav_row .menu-label:after {
+  display: none;
+}
+.slicknav_nav a:hover,
+.slicknav_nav .slicknav_row:hover {
+  color: inherit;
+  background-color: #F6F7F8;
+  border-radius: 3px;
+}
+.slicknav_nav .slicknav_arrow {
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  vertical-align: middle;
+  color: #808488;
+  position: relative;
+  top: -1px;
+}
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=_menu.css.map */

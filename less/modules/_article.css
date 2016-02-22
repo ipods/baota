@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.article-title {
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  font-size: 2.5em;
+}
+.article-meta {
+  margin: 0 0 10px 0;
+  list-style-type: none;
+  font-size: 14px;
+  color: #99a3b1;
+  font-weight: 300;
+  border-top: 1px solid #CBD3DD;
+  padding: 10px 0;
+}
+.article-meta:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.article-meta li {
+  float: left;
+  margin-right: 18px;
+}
+.article-meta li:last-child {
+  margin: 0;
+}
+.article-meta-item {
+  padding-left: 25px;
+  position: relative;
+}
+.article-meta-item a {
+  color: inherit;
+}
+.article-meta-item a:hover {
+  color: #28C;
+}
+.article-meta-item:before {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  font-family: 'Pe-icon-7-stroke';
+  font-size: 20px;
+  line-height: 21px;
+}
+.article-meta-date:before {
+  content: '\e660';
+}
+.article-meta-author:before {
+  content: '\e605';
+}
+.article-meta-category:before {
+  content: '\e653';
+}
+.article-meta-views:before {
+  content: '\e63e';
+}
+.article-meta-comments:before {
+  content: '\e668';
+}
+.article-meta-likes:before {
+  content: '\e642';
+}
+.article-featured-image {
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.article-subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.article-content {
+  font-size: 1.1875em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CBD3DD;
+}
+.article-media {
+  margin: 30px 0;
+}
+.article-media .fluid-width-video-wrapper {
+  margin: 0;
+}
+.article-tags {
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #808488;
+  padding-top: 10px;
+  font-size: 0.875em;
+}
+.article-tag {
+  background-color: #F6F7F8;
+  color: #808488;
+  padding: 5px 10px;
+  margin-left: 2px;
+}
+.article-navigation {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #CBD3DD;
+  margin-bottom: 30px;
+}
+.article-navigation:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.article-navigation-prev,
+.article-navigation-next {
+  display: block;
+  font-weight: 300;
+  color: #808488;
+  position: relative;
+}
+.article-navigation-prev:before,
+.article-navigation-next:before {
+  font-family: 'Pe-icon-7-stroke';
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 35px;
+  width: 15px;
+  text-align: center;
+  text-indent: -8px;
+}
+.article-navigation-prev {
+  padding-left: 20px;
+  float: left;
+}
+.article-navigation-prev:before {
+  content: '\e686';
+  left: 0;
+}
+.article-navigation-next {
+  padding-right: 15px;
+  float: right;
+}
+.article-navigation-next:before {
+  content: '\e684';
+  right: 0;
+}
+.article-widget {
+  margin-bottom: 30px;
+}
+.article-widget-title {
+  font-size: 1.375em;
+}
+.article-related-articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+.article-related-articles li {
+  padding: 5px 0;
+}
+/*# sourceMappingURL=_article.css.map */

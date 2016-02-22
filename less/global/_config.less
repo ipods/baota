@@ -1,8 +1,28 @@
+// Media Queries
+@media-xxs:	479px; // Iphone (appears 320px)
+@media-xs:	767px; // Galaxy (appears 480px)
+@media-sm:	991px; // Ipad Portrait (appears 768px)
+@media-md:	1199px; // Ipad Landscape (appears 992px)
+@media-xmd:	1439px; // NoteBooks (appears 1200px)
+@media-lg:	1599px; // Large devices (appears 1440px)
+@media-xlg:	1799px; // Large devices (appears 1600px)
+@media-xxs-plus: (@media-xxs + 1);
+@media-xs-plus: (@media-xs + 1);
+@xxs:		~'only screen and (max-width: @{media-xxs})';
+@xs:		~'only screen and (max-width: @{media-xs})';
+@sm:		~'only screen and (max-width: @{media-sm})';
+@md:		~'only screen and (max-width: @{media-md})';
+@xmd:		~'only screen and (max-width: @{media-xmd})';
+@lg:		~'only screen and (max-width: @{media-lg})';
+@xlg:		~'only screen and (max-width: @{media-xlg})';
+@xs-only:	~'(min-width: @{media-xxs-plus}) and (max-width: @{media-xs})';
+@sm-only:	~'(min-width: @{media-xs-plus}) and (max-width: @{media-sm})';
 
 /* ==========================================================================
    Colors configuration
    ========================================================================== */
 
+@color-white:        #fff    ;
 @color_black:        #333    ;
 @color_grey:         #99a3b1 ;
 @color_grey-dark:    #808488 ;
@@ -16,6 +36,9 @@
 @color_red:          #FF3625 ;
 @color_yellow:       #FDC441 ;
 
+// difference(@color-white, #020202);   #fdfdfd
+// difference(@color-white, #251f18);   #dae0e7
+// difference(@color-white, #130f0e);   #ecf0f1
 
 /* ==========================================================================
    Fonts configuration
@@ -31,6 +54,7 @@
 
 // Font Size
 @font-size_base: 16;
+@font-size: 16px;
 
 // Font Weight
 @font_thin: 100;
@@ -39,3 +63,17 @@
 @font_medium: 500;
 @font_bold: 700;
 @font_black: 900;
+
+// Buttons
+@button-color:				@color_blue; // Button Color
+@button-color-hover:		negation(@color_blue, #111); // Button Color on Hover
+@button-font-family:		@font_primary; // Button Font Family
+@button-font-color:			@color-white; // Button Font Color
+@button-font-size:			@font-size + 1; // Button Font Size
+@button-font-weight:		@font_light; // Button Font Weight
+@button-height:				54px; // Button Height
+@button-sm-height:			36px; // Small Button Height
+@button-md-height:			44px; // Medium Button Height
+@button-lg-height:			60px; // Large Button Height
+@button-border-width:		1px; // Button Border Thickness
+@button-border-radius:		6px; // Button Border Radius

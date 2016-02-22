@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.box {
+  margin-bottom: 30px;
+  position: relative;
+}
+.box.box-small-icon {
+  padding-left: 40px;
+}
+.box.box-small-icon .box-title {
+  font-size: 1.5625em;
+}
+.box-small-icon-alt {
+  padding-left: 150px;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+.box-small-icon-alt .box-title {
+  font-size: 1.5625em;
+}
+.box-small-icon-alt .box-icon {
+  position: absolute;
+  left: 40px;
+  top: 1px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #CBD3DD;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 80px;
+}
+.box-icon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 22px;
+}
+.box-icon-large {
+  color: #4b5;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  border-radius: 50%;
+  background-color: #F6F7F8;
+}
+.box-title {
+  font-size: 2.1875em;
+  font-weight: 300;
+}
+.box-image .box-title {
+  font-size: 1.5625em;
+}
+.box-description {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #808488;
+}
+@media (max-width: 480px) {
+  .box-small-icon-alt {
+    padding: 100px 0 0 0;
+    text-align: center;
+  }
+  .box-small-icon-alt .box-icon {
+    left: 50%;
+    margin-left: -40px;
+  }
+}
+/*# sourceMappingURL=_box.css.map */

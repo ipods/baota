@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+/* Pricing */
+/*------------------------------*/
+.section-pricing {
+  text-align: center;
+  margin-bottom: 140px;
+}
+.section-pricing .column {
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding: 0 .5px;
+}
+.section-pricing .column .plan {
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #28C;
+  margin-bottom: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.section-pricing .column .price {
+  height: 119px;
+  line-height: 119px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4b5;
+  margin-bottom: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.section-pricing .column .features {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.section-pricing .column .features li {
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #808488;
+  background-color: #F6F7F8;
+  padding: 0;
+  margin: 0 0 1px;
+}
+.section-pricing .column .features li:nth-child(even) {
+  background-color: #ecf0f1;
+}
+.section-pricing .column .buttons {
+  height: 150px;
+  line-height: 150px;
+  background-color: #F6F7F8;
+}
+.section-pricing .column .buttons .btn {
+  vertical-align: middle;
+}
+.section-pricing .column.headers .plan {
+  height: 200px;
+  line-height: 200px;
+  font-size: 25px;
+  color: #333;
+  text-transform: none;
+  background-color: #ecf0f1;
+}
+.section-pricing .vs-icon-feature-no {
+  color: #FF3625;
+}
+.section-pricing .vs-icon-feature-yes {
+  color: #4b5;
+}
+/*# sourceMappingURL=pricing.css.map */

@@ -1,0 +1,53 @@
+@import '../global/_mixins.less';
+
+/* General Styles */
+/*------------------------------*/
+
+.lowercase {text-transform: lowercase;}
+.uppercase {text-transform: uppercase;}
+.notransform {text-transform: none !important;}
+.italic {font-style: italic !important;}
+.overflow-hidden {overflow: hidden !important;}
+
+.position-static {position: static !important;}
+.position-relative {position: relative !important;}
+.position-absolute {position: absolute !important;}
+.position-fixed {position: fixed !important;}
+
+.font-thin {font-weight: 100 !important;}
+.font-light {font-weight: 300 !important;}
+.font-normal {font-weight: 400 !important;}
+.font-medium {font-weight: 500 !important;}
+.font-semi {font-weight: 600 !important;}
+.font-bold {font-weight: 700 !important;}
+
+.no-padding {padding: 0 !important;}
+.no-padding-top {padding-top: 0 !important;}
+.no-padding-bottom {padding-bottom: 0 !important;}
+
+// Generate Margins
+@marginMax: 200;
+
+.margin-generator(@index: 0) when (@index <= @marginMax) {
+.margin-top-@{index} {margin-top: @index*1px !important;}
+.margin-bottom-@{index} {margin-bottom: @index*1px !important;}
+
+@media @md {
+	.margin-top-@{index} {margin-top: @index*.6px !important;}
+	.margin-bottom-@{index} {margin-bottom: @index*.6px !important;}
+}
+
+@media @xs {
+	.margin-top-@{index} {margin-top: @index*.4px !important;}
+	.margin-bottom-@{index} {margin-bottom: @index*.4px !important;}
+}
+
+	.margin-generator(@index + 10);
+}
+
+.margin-generator();
+
+
+
+
+

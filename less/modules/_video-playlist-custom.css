@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.video-js,
+.vjs-control-bar {
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/* end video.css********************************************************/
+.vjs-playlist {
+  width: 100%;
+  background-color: #2D2D2D;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  width: 25%;
+}
+.vjs-track {
+  color: #F7F9FC;
+}
+.vjs-track:hover {
+  color: #315B7E;
+}
+.vjs-playlist ul {
+  padding: 0;
+  list-style: none;
+}
+.vjs-playlist ul li {
+  background-color: #2D2D2D;
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: .4s;
+  -webkit-transition-duration: .4s;
+  -o-transition-duration: .4s;
+  transition-duration: .4s;
+  font-size: 16px;
+  /*margin:10px;*/
+}
+.vjs-playlist ul li a {
+  padding: 15px;
+  display: block;
+  width: 100%;
+}
+.currentTrack {
+  color: gray;
+}
+.currentTrack {
+  background-color: #373737;
+}
+.vjs-playlist ul li:hover {
+  background-color: #373737;
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: .1s;
+  -webkit-transition-duration: .1s;
+  -o-transition-duration: .1s;
+  transition-duration: .1s;
+}
+.vjs-playlist {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.vjs-playlist ul {
+  margin: 0;
+  border: 1px solid #CBD3DD;
+  max-height: 237px;
+  overflow-y: scroll;
+}
+.vjs-playlist ul li {
+  background-color: white;
+  border-bottom: 1px solid #CBD3DD;
+}
+.vjs-playlist ul li:last-child {
+  border-bottom: 0;
+}
+.vjs-playlist ul li a {
+  color: #333;
+  padding-left: 45px;
+  position: relative;
+  padding-right: 70px;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.vjs-playlist ul li a:before {
+  content: '\f04b';
+  font-family: 'FontAwesome';
+  position: absolute;
+  display: block;
+  top: 17px;
+  left: 20px;
+  font-size: 13px;
+}
+.vjs-playlist ul li a.currentTrack:before {
+  content: '\f028';
+  color: #4b5;
+  font-size: 15px;
+  top: 15px;
+}
+.vjs-playlist ul li a.currentTrack {
+  background-color: white;
+  color: #4b5;
+}
+.vjs-playlist ul li:hover {
+  background-color: white;
+}
+.vjs-playlist ul li:hover a {
+  color: #4b5;
+  text-decoration: none;
+}
+.video-playlist-item-duration {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.video-playlist-custom.video-js {
+  margin: 0;
+}
+/*# sourceMappingURL=_video-playlist-custom.css.map */

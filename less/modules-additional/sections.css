@@ -1,0 +1,326 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+/* Section Coding */
+/*------------------------------*/
+.section-coding {
+  border-top: 10px solid #28C;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+}
+.section-coding:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.95);
+}
+.section-coding .promo-title,
+.section-coding .promo-title:before {
+  color: #fff;
+}
+.section-coding .promo-description {
+  color: #fff;
+}
+.section-coding .coding-wrapper {
+  padding: 66px 15px 0;
+  margin: 0 6%;
+}
+.section-coding .code-highlight-wrapper {
+  margin: 0 -150px;
+}
+.section-coding .code-highlight-inner {
+  width: 1048px;
+  height: 606px;
+  padding: 39px 160px 151px;
+  background: url(../img/notebook.png) 0 0 no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -ms-background-size: contain;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: -66px auto 0;
+  max-width: 100%;
+}
+.section-coding .code-highlight-inner .code-highlight {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.section-coding .code-highlight-inner pre[class*="language-"] {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  overflow: auto;
+  border-radius: 0;
+}
+.section-coding .about {
+  padding: 0 35px;
+  margin-bottom: 30px;
+}
+.section-coding .about .title {
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1.3;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+.section-coding .about .title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 8px;
+  background-color: #28C;
+}
+.section-coding .about .description {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.3;
+  color: #fff;
+}
+/* Section Band */
+/*-----------------------------------*/
+.section-band {
+  background-color: #28C;
+  padding: 44px 15px;
+  text-align: center;
+}
+.section-band .band-text,
+.section-band .band-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50%;
+}
+.section-band .band-text {
+  text-align: left;
+  margin-right: 2%;
+}
+.section-band .band-text .title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: .2em;
+}
+.section-band .band-text .description {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.3;
+  color: #fff;
+}
+.section-band .band-buttons {
+  text-align: left;
+}
+.section-band .band-buttons .btn + .btn {
+  margin-left: 6px;
+}
+/* Section Brands */
+/*-----------------------------------*/
+.section-brands {
+  border-top: 2px solid #dae0e7;
+  border-bottom: 2px solid #dae0e7;
+  background-color: #fdfdfd;
+  padding-bottom: 120px;
+  margin-bottom: 44px;
+}
+.section-brands .brand-list {
+  margin: 0 -10px;
+  list-style: none;
+}
+.section-brands .brand-list li {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.section-brands .brand-list a,
+.section-brands .brand-list span {
+  display: block;
+  border: 1px solid #dae0e7;
+  background-color: #ecf0f1;
+  height: 180px;
+  line-height: 178px;
+  text-align: center;
+}
+.section-brands .brand-list a img,
+.section-brands .brand-list span img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Section Testimonials */
+/*-----------------------------------*/
+.section-testimonials .testimonials {
+  margin: 0 -10px;
+  list-style: none;
+}
+.section-testimonials .testimonials li {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.section-testimonials .testimonial {
+  position: relative;
+  border: 1px solid #dae0e7;
+  background-color: #fcfcfc;
+  padding: 27px 30px 12px 140px;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1;
+}
+.section-testimonials .testimonial .avatar {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.section-testimonials .testimonial .avatar img {
+  border-radius: 50%;
+}
+.section-testimonials .testimonial .author {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  color: #28C;
+  text-transform: uppercase;
+}
+.section-testimonials .testimonial .date {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+.section-testimonials .testimonial .text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #808488;
+  margin-bottom: 14px;
+}
+.section-testimonials .testimonial .bottom {
+  border-top: 1px solid #dae0e7;
+  padding-top: 12px;
+}
+.section-testimonials .testimonial .bottom .recommend {
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #808488;
+}
+.section-testimonials .testimonial .bottom .rating {
+  float: right;
+  margin-top: 5px;
+}
+.section-testimonials .testimonial .bottom .rating .vs-icon-star {
+  display: inline-block;
+  font-size: 10px;
+  color: #dae0e7;
+}
+.section-testimonials .testimonial .bottom .rating .vs-icon-star.on {
+  color: #FDC441;
+}
+/* Section FAQ */
+/*-----------------------------------*/
+.section-faq .questions {
+  margin: 0;
+  list-style: none;
+}
+.section-faq .questions .title {
+  margin-bottom: 0;
+}
+.section-faq .questions .title a {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+.section-faq .questions .title a:before {
+  content: '\e905';
+  font-family: 'icons';
+  color: #28C;
+}
+.section-faq .questions .title a:hover,
+.section-faq .questions .title a:active {
+  color: #28C;
+  text-decoration: none;
+}
+.section-faq .questions .description {
+  font-size: 15px;
+  font-weight: 100;
+  color: #808488;
+}
+.section-faq .questions .description:before {
+  content: '“';
+}
+.section-faq .questions .description:after {
+  content: ' ...”';
+}
+.section-faq .questions li {
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #dae0e7;
+}
+.section-faq .questions li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+/*# sourceMappingURL=sections.css.map */

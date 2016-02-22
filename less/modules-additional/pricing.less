@@ -1,0 +1,82 @@
+@import '../global/_mixins.less';
+
+/* Pricing */
+/*------------------------------*/
+
+.section-pricing {
+	text-align: center;
+	margin-bottom: 140px;
+
+	.column {
+		float: left;
+		width: 25%;
+		min-height: 1px;
+		padding: 0 .5px;
+
+		.plan {
+			height: 80px;
+			line-height: 80px;
+			font-size: @font-size + 4;
+			font-weight: @font_light;
+			color: @color-white;
+			text-transform: uppercase;
+			background-color: @color_blue;
+			margin-bottom: 1px;
+			.ellipsis();
+		}
+
+		.price {
+			height: 119px;
+			line-height: 119px;
+			font-size: 60px;
+			font-weight: @font_light;
+			color: @color-white;
+			text-transform: uppercase;
+			background-color: @color_green;
+			margin-bottom: 1px;
+			.ellipsis();
+		}
+
+		.features {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			li {
+				height: 80px;
+				line-height: 80px;
+				font-size: @font-size + 2;
+				font-weight: @font_light;
+				color: @color_grey-dark;
+				background-color: @color_grey-lighter;
+				padding: 0;
+				margin: 0 0 1px;
+
+				&:nth-child(even) {background-color: difference(@color-white, #130f0e);}
+			}
+		}
+
+		.buttons {
+			height: 150px;
+			line-height: 150px;
+			background-color: @color_grey-lighter;
+			.btn {vertical-align: middle;}
+		}
+
+		&.headers .plan {
+			height: 200px;
+			line-height: 200px;
+			font-size: @font-size + 9;
+			color: @color_black;
+			text-transform: none;
+			background-color: difference(@color-white, #130f0e);
+		}
+	}
+
+	.vs-icon-feature-no {color: @color_red;}
+	.vs-icon-feature-yes {color: @color_green;}
+}
+
+
+
+

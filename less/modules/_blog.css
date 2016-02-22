@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.blog-grid {
+  margin-bottom: 60px;
+}
+.blog-grid-image {
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+.blog-grid-image img {
+  max-width: 100%;
+}
+.blog-grid-image:before,
+.blog-grid-image:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 5;
+}
+.blog-grid-image:before {
+  width: 2px;
+  height: 0;
+  -webkit-transition: height .25s ease;
+  -moz-transition: height .25s ease;
+  -ms-transition: height .25s ease;
+  -o-transition: height .25s ease;
+  transition: height .25s ease;
+}
+.blog-grid-image:after {
+  width: 0;
+  height: 2px;
+  -webkit-transition: width .25s ease;
+  -moz-transition: width .25s ease;
+  -ms-transition: width .25s ease;
+  -o-transition: width .25s ease;
+  transition: width .25s ease;
+}
+.blog-grid-image:hover:before {
+  height: 40px;
+}
+.blog-grid-image:hover:after {
+  width: 40px;
+}
+.blog-grid-image-over {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.blog-grid-image:hover .blog-grid-image-over {
+  opacity: 1;
+}
+.blog-grid-title {
+  margin-bottom: 10px;
+  font-size: 1.3125em;
+  line-height: 1.4;
+}
+.blog-grid-title a {
+  text-decoration: none;
+}
+.blog-grid-excerpt {
+  font-size: 0.9375em;
+  margin-bottom: 15px;
+}
+.blog-grid-meta {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #99a3b1;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+}
+.blog-grid-meta:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.blog-grid-author {
+  display: block;
+}
+/*# sourceMappingURL=_blog.css.map */

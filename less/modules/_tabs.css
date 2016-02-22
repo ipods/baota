@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.tabs {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.tabs .content {
+  border-radius: 3px;
+  padding: 30px;
+  border: 1px solid #CBD3DD;
+}
+.tabs .content p:last-child {
+  margin: 0;
+}
+.tabs .steps {
+  margin: 0;
+}
+.tabs .steps ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.tabs .steps ul > li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  background-color: #F6F7F8;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 10px;
+  margin-bottom: -1px;
+  border-radius: 3px;
+}
+.tabs .steps ul > li.current {
+  background-color: white;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.tabs .steps ul > li.current a,
+.tabs .steps ul > li.current a:hover {
+  outline: none;
+}
+.tabs .steps ul > li a {
+  font-size: 0.875em;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+.tabs .steps ul > li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.tab-title {
+  display: none;
+}
+/*# sourceMappingURL=_tabs.css.map */

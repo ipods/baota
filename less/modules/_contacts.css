@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.contacts {
+  margin-bottom: 30px;
+}
+.contacts-inputs {
+  padding: 0 0 15px 0;
+  margin: 0;
+  list-style: none;
+}
+.contacts-item {
+  margin-bottom: 30px;
+}
+.contacts-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #4b5;
+}
+.contacts-label {
+  font-size: 0.875em;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #808488;
+  margin-bottom: 15px;
+}
+.contacts-radio,
+.contacts-checkbox {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  padding-left: 22px;
+}
+.contacts-input {
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-top: 0;
+  line-height: 1;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+.contacts-input:focus {
+  border-color: #4b5;
+}
+.contacts-input:-webkit-autofill,
+.contacts-input:-webkit-autofill:hover,
+.contacts-input:-webkit-autofill:focus,
+.contacts-input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+textarea.contacts-input {
+  height: 142px;
+}
+.contacts-success {
+  display: none;
+  position: fixed;
+  background-color: white;
+  font-size: 1.25em;
+  font-weight: 300;
+  border: 1px solid #4b5;
+  padding: 30px 30px;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  border-radius: 3px;
+  line-height: 1.6;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  padding-left: 100px;
+}
+.contacts-success i {
+  display: block;
+  font-size: 45px;
+  color: #4b5;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -22px;
+}
+/*# sourceMappingURL=_contacts.css.map */

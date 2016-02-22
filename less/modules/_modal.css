@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.modal {
+  display: none;
+  width: 600px;
+  background-color: #F6F7F8;
+  border-radius: 3px;
+  max-width: 80%;
+}
+.modal-header {
+  background-color: #CBD3DD;
+  padding: 20px 25px;
+  position: relative;
+}
+.modal-header .fa.fa-times {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  margin-top: -10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 18px;
+}
+.modal-title {
+  margin: 0;
+}
+.modal-content {
+  padding: 25px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.modal-footer {
+  border-top: 1px solid #CBD3DD;
+  padding: 20px 25px;
+}
+.modal-footer.center {
+  text-align: center;
+}
+.modal-footer .button {
+  margin-right: 10px;
+}
+.modal-footer .button:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=_modal.css.map */

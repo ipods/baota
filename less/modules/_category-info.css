@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.category-info {
+  padding: 60px 0 20px 0;
+}
+.category-title {
+  font-size: 3em;
+  position: relative;
+  font-weight: 300;
+  padding-right: 60px;
+}
+.category-description {
+  font-size: 1.375em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #808488;
+}
+.fragment-identifier {
+  color: #CBD3DD;
+  display: block;
+  font-size: 19px;
+  border: 1px solid #CBD3DD;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+  right: 0;
+  border-radius: 3px;
+  top: 0;
+  outline: none;
+  -webkit-transition: color 0.3s ease, border-color 0.3s ease;
+  -moz-transition: color 0.3s ease, border-color 0.3s ease;
+  -ms-transition: color 0.3s ease, border-color 0.3s ease;
+  -o-transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.fragment-identifier.zeroclipboard-is-hover {
+  text-decoration: none;
+  border: 1px solid #99a3b1;
+  color: #99a3b1;
+}
+.fragment-identifier.zeroclipboard-is-hover:after,
+.fragment-identifier.zeroclipboard-is-hover:before {
+  opacity: 1;
+}
+.fragment-identifier.fragment-identifier-copied:after {
+  content: 'copied';
+  color: #4b5;
+  border-color: #4b5;
+  width: 70px;
+  margin-left: -35px;
+}
+.fragment-identifier.fragment-identifier-copied:before {
+  border-color: #4b5;
+}
+.fragment-identifier.fragment-identifier-error:after {
+  content: 'not supported';
+  color: #FF3625;
+  border-color: #FF3625;
+  width: 100px;
+  margin-left: -50px;
+}
+.fragment-identifier.fragment-identifier-error:before {
+  border-color: #FF3625;
+}
+.fragment-identifier:after {
+  content: 'copy fragment identifier';
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  width: 170px;
+  left: 50%;
+  margin-left: -85px;
+  top: -43px;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  color: #808488;
+  border: 1px solid #CBD3DD;
+  line-height: 31px;
+  border-radius: 3px;
+  -webkit-transition: color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  -moz-transition: color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  -ms-transition: color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  background-color: white;
+  z-index: 5;
+  pointer-events: none;
+}
+.fragment-identifier:before {
+  width: 4px;
+  height: 4px;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  content: '';
+  border-right: 1px solid #99a3b1;
+  border-bottom: 1px solid #99a3b1;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  top: -12px;
+  left: 50%;
+  margin-left: -2px;
+  z-index: 10;
+  pointer-events: none;
+}
+.container-fluid .fragment-identifier:after {
+  top: 5px;
+  left: auto;
+  right: 55px;
+  margin: 0;
+}
+.container-fluid .fragment-identifier:before {
+  margin: 0;
+  left: auto;
+  right: 53px;
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/*# sourceMappingURL=_category-info.css.map */

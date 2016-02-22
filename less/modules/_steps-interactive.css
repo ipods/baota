@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.steps-interactive {
+  position: relative;
+  margin-bottom: 30px;
+  display: block;
+}
+.steps-interactive .content {
+  border-radius: 3px;
+  padding: 30px 30px 60px 30px;
+  border: 1px solid #CBD3DD;
+}
+.steps-interactive .content p:last-child {
+  margin: 0;
+}
+.steps-interactive .actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.steps-interactive .actions > ul {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  list-style-type: none;
+}
+.steps-interactive .actions > ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.steps-interactive .actions > ul > li {
+  display: block;
+}
+.steps-interactive .actions > ul > li a {
+  background-color: #F6F7F8;
+  border-radius: 3px;
+  padding: 10px 15px;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  line-height: 1.2;
+  font-weight: 300;
+}
+.steps-interactive .actions > ul > li a:hover {
+  text-decoration: none;
+}
+.steps-interactive .actions > ul > li:first-child {
+  float: left;
+}
+.steps-interactive .actions > ul > li:last-child,
+.steps-interactive .actions > ul > li:nth-child(2) {
+  float: right;
+}
+.steps-interactive .steps {
+  margin: 0;
+  display: block;
+}
+.steps-interactive .steps ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.steps-interactive .steps ul > li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  background-color: #F6F7F8;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.steps-interactive .steps ul > li.current {
+  background-color: #4b5;
+  outline: none;
+}
+.steps-interactive .steps ul > li.current a,
+.steps-interactive .steps ul > li.current a:hover {
+  color: white;
+  outline: none;
+}
+.steps-interactive .steps ul > li a {
+  font-size: 0.875em;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+.steps-interactive .steps ul > li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.step-interactive-title {
+  display: none;
+}
+.content {
+  display: block;
+}
+/*# sourceMappingURL=_steps-interactive.css.map */

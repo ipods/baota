@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Colors configuration
+   ========================================================================== */
+/* ==========================================================================
+   Fonts configuration
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+.transition {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.transition-opacity {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.transition-background {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.transition-color {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.transition-color-background {
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+.list-view {
+  margin-bottom: 30px;
+}
+.list-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CBD3DD;
+}
+.list-item:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+.list-item-header {
+  margin-bottom: 10px;
+}
+.list-item-header:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.list-item-title {
+  font-size: 1.25em;
+  line-height: 1.4;
+  width: 75%;
+  float: left;
+  margin: 0;
+}
+.list-item-title a {
+  text-decoration: none;
+}
+.list-item-meta {
+  display: block;
+  width: 25%;
+  float: right;
+  line-height: 1.6;
+  text-align: right;
+  max-width: 250px;
+  font-weight: 300;
+  font-size: 0.875em;
+}
+.list-item-meta a {
+  color: #808488;
+  padding: 5px 10px;
+  background-color: #F6F7F8;
+  border-radius: 3px;
+}
+.list-item-content {
+  line-height: 1.4;
+  font-weight: 300;
+}
+/*# sourceMappingURL=_list-view.css.map */
