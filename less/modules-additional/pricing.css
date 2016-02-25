@@ -43,17 +43,16 @@
 }
 /* Pricing */
 /*------------------------------*/
-.section-pricing {
+.pricing-list {
   text-align: center;
-  margin-bottom: 140px;
 }
-.section-pricing .column {
+.pricing-list .column {
   float: left;
   width: 25%;
   min-height: 1px;
   padding: 0 .5px;
 }
-.section-pricing .column .plan {
+.pricing-list .column .plan {
   height: 80px;
   line-height: 80px;
   font-size: 20px;
@@ -66,7 +65,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.section-pricing .column .price {
+.pricing-list .column .price {
   height: 119px;
   line-height: 119px;
   font-size: 60px;
@@ -79,12 +78,12 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.section-pricing .column .features {
+.pricing-list .column .features {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.section-pricing .column .features li {
+.pricing-list .column .features li {
   height: 80px;
   line-height: 80px;
   font-size: 18px;
@@ -94,18 +93,18 @@
   padding: 0;
   margin: 0 0 1px;
 }
-.section-pricing .column .features li:nth-child(even) {
+.pricing-list .column .features li:nth-child(even) {
   background-color: #ecf0f1;
 }
-.section-pricing .column .buttons {
+.pricing-list .column .buttons {
   height: 150px;
   line-height: 150px;
   background-color: #F6F7F8;
 }
-.section-pricing .column .buttons .btn {
+.pricing-list .column .buttons .btn {
   vertical-align: middle;
 }
-.section-pricing .column.headers .plan {
+.pricing-list .column.headers .plan {
   height: 200px;
   line-height: 200px;
   font-size: 25px;
@@ -113,10 +112,10 @@
   text-transform: none;
   background-color: #ecf0f1;
 }
-.section-pricing .vs-icon-feature-no {
+.pricing-list .vs-icon-feature-no {
   color: #FF3625;
 }
-.section-pricing .vs-icon-feature-yes {
+.pricing-list .vs-icon-feature-yes {
   color: #4b5;
 }
 /*# sourceMappingURL=pricing.css.map */

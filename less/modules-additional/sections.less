@@ -1,5 +1,13 @@
 @import '../global/_mixins.less';
 
+.section-bordered {
+	border-top: 2px solid difference(@color-white, #251f18);
+	border-bottom: 2px solid difference(@color-white, #251f18);
+	background-color: difference(@color-white, #020202);
+	padding-bottom: 120px;
+	margin-bottom: 44px;
+}
+
 /* Section Coding */
 /*------------------------------*/
 
@@ -126,38 +134,30 @@
 /* Section Brands */
 /*-----------------------------------*/
 
-.section-brands {
-	border-top: 2px solid difference(@color-white, #251f18);
-	border-bottom: 2px solid difference(@color-white, #251f18);
-	background-color: difference(@color-white, #020202);
-	padding-bottom: 120px;
-	margin-bottom: 44px;
+.brand-list {
+	margin: 0 -10px;
+	list-style: none;
 
-	.brand-list {
-		margin: 0 -10px;
-		list-style: none;
+	li {
+		float: left;
+		width: 25%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
 
-		li {
-			float: left;
-			width: 25%;
-			padding: 0 10px;
-			margin-bottom: 20px;
-		}
+	a, span {
+		display: block;
+		border: 1px solid difference(@color-white, #251f18);
+		background-color: difference(@color-white, #130f0e);
+		height: 180px;
+		line-height: 178px;
+		text-align: center;
 
-		a, span {
-			display: block;
-			border: 1px solid difference(@color-white, #251f18);
-			background-color: difference(@color-white, #130f0e);
-			height: 180px;
-			line-height: 178px;
-			text-align: center;
-
-			img {
-				display: inline-block;
-				vertical-align: middle;
-				max-width: 100%;
-				max-height: 100%;
-			}
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 100%;
+			max-height: 100%;
 		}
 	}
 }
@@ -165,27 +165,18 @@
 /* Section Testimonials */
 /*-----------------------------------*/
 
-.section-testimonials {
-	.testimonials {
-		margin: 0 -10px;
-		list-style: none;
+.testimonials-outer {overflow: hidden; padding-top: 150px;}
+.testimonials-inner {margin: 0 -10px;}
 
-		li {
-			float: left;
-			width: 50%;
-			padding: 0 10px;
-			margin-bottom: 20px;
-		}
-	}
-
+.testimonials {
 	.testimonial {
 		position: relative;
 		border: 1px solid difference(@color-white, #251f18);
 		background-color: difference(@color-white, #030303);
 		padding: 27px 30px 12px 140px;
-		margin-bottom: 0;
 		text-align: left;
 		line-height: 1;
+		margin-bottom: 20px;
 
 		.avatar {
 			.size(90px);
@@ -242,12 +233,62 @@
 			}
 		}
 	}
+
+	.owl-item > div {padding: 0 10px;}
+	.owl-pagination {display: none !important;}
+
+	.owl-buttons {
+		text-align: center;
+		font-size: 0;
+		margin-bottom: 70px;
+		position: absolute;
+		top: -130px;
+		left: 0;
+		right: 0;
+
+		.owl-prev, .owl-next {
+			display: inline-block;
+			border-radius: 2px 0 0 2px;
+			height: 60px;
+			line-height: 58px;
+			font-size: @font-size - 1;
+			font-weight: 300;
+			color: @color_black;
+			padding: 0 4em;
+			border: 1px solid difference(@color-white, #251f18);
+			background-color: difference(@color-white, #030303);
+			cursor: pointer;
+
+			&:hover, &:active {text-decoration: none;}
+		}
+
+		.owl-prev {
+			&:before {
+				content: '<';
+				display: inline-block;
+				vertical-align: 0;
+				margin-right: 5px;
+			}
+		}
+
+		.owl-next {
+			margin-left: -1px;
+			border-radius: 0 2px 2px 0;
+
+			&:after {
+				content: '>';
+				display: inline-block;
+				vertical-align: 0;
+				margin-left: 5px;
+			}
+		}
+	}
 }
 
 /* Section FAQ */
 /*-----------------------------------*/
 
-.section-faq {
+.faq-list {
 	.questions {
 		margin: 0;
 		list-style: none;
