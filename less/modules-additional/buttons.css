@@ -80,8 +80,8 @@
   font-weight: 300;
   color: #fff;
   white-space: nowrap;
-  letter-spacing: 1.2px;
-  padding: 0 27px;
+  letter-spacing: 0;
+  padding: 0 25px;
   -webkit-transition: all 0.25s ease, all 0.25s ease;
   -moz-transition: all 0.25s ease, all 0.25s ease;
   -ms-transition: all 0.25s ease, all 0.25s ease;
@@ -167,7 +167,7 @@
 /* Social Links */
 /*------------------------------*/
 .social-links {
-  margin: 0;
+  margin: 0 0 1px;
   list-style: none;
 }
 .social-links li {

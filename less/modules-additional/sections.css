@@ -46,7 +46,6 @@
   border-bottom: 2px solid #dae0e7;
   background-color: #fdfdfd;
   padding-bottom: 120px;
-  margin-bottom: 44px;
 }
 /* Section Coding */
 /*------------------------------*/
@@ -73,6 +72,7 @@
 .section-coding .promo-title,
 .section-coding .promo-title:before {
   color: #fff;
+  opacity: 1;
 }
 .section-coding .promo-description {
   color: #fff;
@@ -150,7 +150,7 @@
 .section-band .band-buttons {
   display: inline-block;
   vertical-align: middle;
-  max-width: 50%;
+  max-width: 46%;
 }
 .section-band .band-text {
   text-align: left;
@@ -240,7 +240,7 @@
 }
 .testimonials .testimonial .date {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 16px;
 }
 .testimonials .testimonial .text {
@@ -352,7 +352,7 @@
 }
 .faq-list .questions .description {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   color: #808488;
 }
 .faq-list .questions .description:before {

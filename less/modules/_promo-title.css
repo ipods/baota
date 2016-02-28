@@ -57,7 +57,7 @@
 .promo-title {
   text-align: center;
   font-size: 3.25em;
-  font-weight: 300;
+  font-weight: 100;
   color: #1a1a1a;
   margin-bottom: 20px;
   position: relative;
@@ -78,6 +78,7 @@
   speak: none;
 }
 .promo-title span {
+  font-weight: 300;
   color: #4b5;
 }
 .promo-description {

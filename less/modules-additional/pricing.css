@@ -93,6 +93,9 @@
   padding: 0;
   margin: 0 0 1px;
 }
+.pricing-list .column .features li i {
+  font-size: 24px;
+}
 .pricing-list .column .features li:nth-child(even) {
   background-color: #ecf0f1;
 }

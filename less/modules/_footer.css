@@ -43,7 +43,7 @@
 }
 .footer {
   padding: 40px 0;
-  background-color: #F6F7F8;
+  background-color: #ecf0f1;
   position: relative;
 }
 .footer-is-fixed {
@@ -190,13 +190,13 @@
   display: block;
 }
 .footer-extended {
-  background-color: #F6F7F8;
+  background-color: #ecf0f1;
   font-size: 0.75em;
   border-top: 1px solid #e4e8ed;
 }
 .footer-extended-container {
   border-bottom: 1px solid #d1d8e1;
-  padding: 40px 0;
+  padding: 80px 0 50px;
 }
 .footer-extended-menu {
   margin-bottom: 30px;

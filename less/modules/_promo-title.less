@@ -17,11 +17,10 @@
 	}
 }
 
-
 .promo-title{
 	text-align: center;
 	.fz(52);
-	font-weight: @font_light;
+	font-weight: @font_thin;
 	color: darken(@color_black, 10%);
 	margin-bottom: 20px;
 	position: relative;
@@ -42,7 +41,10 @@
 		speak: none;
 	}
 
-	span {color: @color_green;}
+	span {
+		font-weight: @font_light;
+		color: @color_green;
+	}
 }
 
 .promo-description{

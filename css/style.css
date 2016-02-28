@@ -7308,7 +7308,7 @@ Copyright (c) 2015 Daniel Eden
 }
 .footer {
   padding: 40px 0;
-  background-color: #F6F7F8;
+  background-color: #ecf0f1;
   position: relative;
 }
 .footer-is-fixed {
@@ -7455,13 +7455,13 @@ Copyright (c) 2015 Daniel Eden
   display: block;
 }
 .footer-extended {
-  background-color: #F6F7F8;
+  background-color: #ecf0f1;
   font-size: 0.75em;
   border-top: 1px solid #e4e8ed;
 }
 .footer-extended-container {
   border-bottom: 1px solid #d1d8e1;
-  padding: 40px 0;
+  padding: 80px 0 50px;
 }
 .footer-extended-menu {
   margin-bottom: 30px;
@@ -9857,7 +9857,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .promo-title {
   text-align: center;
   font-size: 3.25em;
-  font-weight: 300;
+  font-weight: 100;
   color: #1a1a1a;
   margin-bottom: 20px;
   position: relative;
@@ -9878,6 +9878,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   speak: none;
 }
 .promo-title span {
+  font-weight: 300;
   color: #4b5;
 }
 .promo-description {
@@ -14946,7 +14947,7 @@ input.changelog-input {
   }
 }
 .call-to-action {
-  padding: 80px 0;
+  padding: 100px 0;
   background-image: url('../img/backgrounds/9.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14956,6 +14957,8 @@ input.changelog-input {
   background-position: center top;
   background-repeat: no-repeat;
   text-align: center;
+  border-top: 2px solid #dae0e7;
+  border-bottom: 2px solid #dae0e7;
 }
 .call-to-action-title {
   font-size: 3.25em;
@@ -15459,6 +15462,36 @@ input.changelog-input {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.vs-icon-nonstop:before {
+  content: "\e90a";
+}
+.vs-icon-question:before {
+  content: "\e90b";
+}
+.vs-icon-checked:before {
+  content: "\e90c";
+}
+.vs-icon-question-mark:before {
+  content: "\e905";
+}
+.vs-icon-checked2:before {
+  content: "\e906";
+}
+.vs-icon-nonstop2:before {
+  content: "\e907";
+}
+.vs-icon-question2:before {
+  content: "\e908";
+}
+.vs-icon-star:before {
+  content: "\e909";
+}
+.vs-icon-feature-no:before {
+  content: "\e903";
+}
+.vs-icon-feature-yes:before {
+  content: "\e904";
+}
 .vs-icon-bucket:before {
   content: "\e900";
 }
@@ -15467,27 +15500,6 @@ input.changelog-input {
 }
 .vs-icon-settings:before {
   content: "\e902";
-}
-.vs-icon-feature-no:before {
-  content: "\e903";
-}
-.vs-icon-feature-yes:before {
-  content: "\e904";
-}
-.vs-icon-question-mark:before {
-  content: "\e905";
-}
-.vs-icon-checked:before {
-  content: "\e906";
-}
-.vs-icon-nonstop:before {
-  content: "\e907";
-}
-.vs-icon-question:before {
-  content: "\e908";
-}
-.vs-icon-star:before {
-  content: "\e909";
 }
 /* General Styles */
 /*------------------------------*/
@@ -16046,8 +16058,8 @@ input.changelog-input {
   font-weight: 300;
   color: #fff;
   white-space: nowrap;
-  letter-spacing: 1.2px;
-  padding: 0 27px;
+  letter-spacing: 0;
+  padding: 0 25px;
   -webkit-transition: all 0.25s ease, all 0.25s ease;
   -moz-transition: all 0.25s ease, all 0.25s ease;
   -ms-transition: all 0.25s ease, all 0.25s ease;
@@ -16133,7 +16145,7 @@ input.changelog-input {
 /* Social Links */
 /*------------------------------*/
 .social-links {
-  margin: 0;
+  margin: 0 0 1px;
   list-style: none;
 }
 .social-links li {
@@ -16278,6 +16290,9 @@ input.changelog-input {
   padding: 0;
   margin: 0 0 1px;
 }
+.pricing-list .column .features li i {
+  font-size: 24px;
+}
 .pricing-list .column .features li:nth-child(even) {
   background-color: #ecf0f1;
 }
@@ -16308,7 +16323,6 @@ input.changelog-input {
   border-bottom: 2px solid #dae0e7;
   background-color: #fdfdfd;
   padding-bottom: 120px;
-  margin-bottom: 44px;
 }
 /* Section Coding */
 /*------------------------------*/
@@ -16335,6 +16349,7 @@ input.changelog-input {
 .section-coding .promo-title,
 .section-coding .promo-title:before {
   color: #fff;
+  opacity: 1;
 }
 .section-coding .promo-description {
   color: #fff;
@@ -16412,7 +16427,7 @@ input.changelog-input {
 .section-band .band-buttons {
   display: inline-block;
   vertical-align: middle;
-  max-width: 50%;
+  max-width: 46%;
 }
 .section-band .band-text {
   text-align: left;
@@ -16502,7 +16517,7 @@ input.changelog-input {
 }
 .testimonials .testimonial .date {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 16px;
 }
 .testimonials .testimonial .text {
@@ -16614,7 +16629,7 @@ input.changelog-input {
 }
 .faq-list .questions .description {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   color: #808488;
 }
 .faq-list .questions .description:before {
